@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js" integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css" integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="icons/fonts.css">
+    <title>Meritocracia</title>
+</head>
+<body>
+    
+    <div id="Form_Init" class="Form_Init">
+        
+        <ul>
+            <li class="instagram">
+                <input type="checkbox" name="Instagram"> Instagram </input>
+
+                
+                <form  id="Instagram_data" name = Instagram_data>
+                    <h3>¿Cuál crees que son estos datos? (por año)</h3>
+                    <p><input placeholder="Cuota de Mercado %"   type="text" name="elemento0"></input></p>
+                    <p><input placeholder="Ingeso por Usuario $" type="text" name="elemento1"></input></p>
+                    
+                    <p><input placeholder="Ingresos Totales $" type="text" name="elemento2"></input></p>
+                    <P style= "font-size: 13px;"> (en miles de millones)</P>
+                    
+                    <p><input placeholder="Numero de Usuarios Activos " type="text" name="elemento3"> </input></p>
+                    <P style= "font-size: 13px;"> (en cientos de millones)</P>
+                    <h3>¿Cúantas horas le dedicas al día?</h3>
+                    <p><input placeholder="Numero de horas" type="text" name="elementohora"> </input></p>
+                    <p>¿Crees que instagram hace uso correcto de los datos?</p>
+                    
+                    <select name="escandalos">
+                        <option>Si</option>
+                        <option selected>No</option>
+                    </select>
+                </form>
+            </li>
+
+            <li class="twitter">
+                <input type="checkbox" name="Twitter"   value="4.86"> Twitter   </input>
+                <form  id="Twitter_data" name = Twitter_data>
+                    <h3>¿Cuál crees que son estos datos? (por año)</h3>
+                    <p><input placeholder="Cuota de Mercado %"   type="text" name="elemento0"></input></p>
+                    
+                    <p><input placeholder="Ingeso por Usuario " type="text" name="elemento1"></input></p>
+                    
+                    <p><input placeholder="Ingresos Totales " type="text" name="elemento2"></input></p>
+                    <P style= "font-size: 13px;"> (en miles de millones)</P>
+                    <p><input placeholder="Numero de Usuarios Activos " type="text" name="elemento3"></input></p>
+                    <P style= "font-size: 13px;"> (en cientos de millones)</P>
+                    <h3>¿Cúantas horas le dedicas al día?</h3>
+                    <p><input placeholder="Numero de horas" type="text" name="elementohora"> </input></p>
+                    <p>¿Crees que twitter hace uso correcto de los datos?</p>
+                    
+                    <select name="escandalos">
+                        <option>Si</option>
+                        <option selected>No</option>
+                    </select>
+                </form>
+
+            </li>
+
+            <li class="facebook">
+                <input type="checkbox" name="Facebook"  value="8.97"> Facebook  </input>
+                <form  id="Facebook_data" name = Facebook_data>
+                    <h3>¿Cuál crees que son estos datos? (por año)</h3>
+                    <p><input placeholder="Cuota de Mercado %"   type="text" name="elemento0"></input></p>
+                    
+                    <p><input placeholder="Ingeso por Usuario $" type="text" name="elemento1"></input></p>
+                    
+                    <p><input placeholder="Ingresos Totales $" type="text" name="elemento2"></input></p>
+                    <P style= "font-size: 13px;"> (en miles de millones)</P>
+                    <p><input placeholder="Numero de Usuarios Activos " type="text" name="elemento3"></input></p>
+                    <P style= "font-size: 13px;"> (en cientos de millones)</P>
+                    <h3>¿Cúantas horas le dedicas al día?</h3>
+                    <p><input placeholder="Numero de horas" type="text" name="elementohora"> </input></p>
+                    <p>¿Crees que facebook hace uso correcto de los datos?</p>
+                    <select name="escandalos">
+                        <option>Si</option>
+                        <option selected>No</option>
+                    </select>
+                </form>
+
+            </li>
+
+            <li class="google">
+                <input type="checkbox" name="Google"    value="6.34"> Google    </input>
+                <form id="Google_data" name = Google_data>
+                    <h3>¿Cuál crees que son estos datos? (por año)</h3>
+                    <p><input placeholder="Cuota de Mercado %"   type="text" name="elemento0"></input></p>
+                    
+                    <p><input placeholder="Ingeso por Usuario $" type="text" name="elemento1"></input></p>
+                    
+                    <p><input placeholder="Ingresos Totales $" type="text" name="elemento2"></input> </p>
+                    <P style= "font-size: 13px;"> (en miles de millones)</P>
+                    <p><input placeholder="Numero de Usuarios Activos " type="text" name="elemento3"></input></p>
+                    <P style= "font-size: 13px;"> (en cientos de millones)</P>
+                    <h3>¿Cúantas horas le dedicas al día?</h3>
+                    <p><input placeholder="Numero de horas" type="text" name="elementohora"> </input></p>
+                    <p>¿Crees que google hace uso correcto de los datos?</p>
+                    <select name="escandalos">
+                        <option>Si</option>
+                        <option selected>No</option>
+                    </select>
+                </form>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <div id="Send_Init" class="Send_Init">
+        
+        <center><button type="button" id="botonOn" onclick="FbotonOn()" > Enviar </button></center>
+
+    </div>
+
+    <ul id="social" class="social">
+        
+        <li>
+            <div id="facebook" class="facebook" >
+                
+                <div id="ocultarF" >
+                   <center><a href="view/facebook/index.html" target="search_iframe"><button class="icon-facebook2"></button></a></center> 
+                <div id="header" class="header">
+                    <canvas id="canvasF" width="400" height="400"></canvas>
+
+                </div>
+               
+                <div id="datos_usuario_F">
+                    <center><p style="background-color: #3b5998;">Aproximadamente, generas a Facebook: <p id="facebook_five" class="five" style="background-color: #3b5998;" >Nada</p></p></center>
+                </div>
+            </div>
+            </div>
+
+            <div id="google" class="google">
+                <div id="ocultarG">
+                    <center> <a href="view/google/index.html" target="search_iframe"><button class="icon-google"></button></a></center>
+                <div id="header" class="header">
+                    <canvas id="canvasG" width="400" height="400"></canvas>
+                </div>
+
+              
+
+                <div id="datos_usuario_G">
+                    <center><p style="background-color: #db4a39;">Aproximadamente, generas a Google: <p id="google_five" class="five" style="background-color: #db4a39;" >Nada</p></p></center>
+                </div>
+            </div>
+        </div>
+        </div>
+        </li>
+
+        
+        <li>
+            <div id="twitter" class="twitter">
+                <div id="ocultarT">
+                    <center><a href="view/twitter/index.html" target="search_iframe"><button class="icon-twitter"></button></a></center>
+                <div id="header" class="header">
+                    <canvas id="canvasT" width="400" height="400"></canvas>
+
+                </div>
+               
+                <div id="datos_usuario_T">
+                    <center><p style="background-color: #00acee;">Aproximadamente, generas a Twitter <p id="twitter_five" class="five" style="background-color: #00acee;" >Nada</p></p></center>
+                </div>
+            </div>
+            </div>
+
+
+
+            <div id="instagram" class="instagram">
+                <div id="ocultarI">
+                    <center><a target="search_iframe"><button class="icon-instagram"></button></a></center>
+                <div id="header" class="header">
+                    <canvas id="canvasI" width="400" height="400"></canvas>
+
+                </div>
+
+
+               
+                <div id="datos_usuario_I">
+                    <center><p style="background : linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">Aproximadamente, generas a Instagram: <p id="instagram_five" class="five" style="background : linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">Nada</p></p></center>
+                </div>
+            </div>
+            </div>
+
+        </li>
+        <li>
+    
+ 
+                <h3 style = "background-color: #00acee;">Noticias sobre Twitter</h3>
+                    
+                     <a href="https://cincodias.elpais.com/cincodias/2019/08/07/companias/1565192614_688201.html" style="font-size: 13px;" > &bull; Twitter admite que usó datos de sus usuarios sin permiso</a><br>
+                      <a href="https://www.xataka.com/servicios/twitter-le-vendio-datos-al-mismo-investigador-de-cambridge-analytica-que-se-los-robo-a-facebook" style="font-size: 13px;">&bull;Twitter le vendió datos al mismo investigador de Cambridge Analytica que se los robó a Facebook</a><br>
+                    <a href="https://www.abc.es/tecnologia/redes/abci-twitter-estado-usando-datos-usuarios-para-publicidad-sin-tener-permiso-201908080938_noticia.html" style="font-size: 13px;">&bull;La red social Twitter ha estado usando datos de sus usuarios para publicidad sin tener permiso </a><br>
+                    
+                <h3 style="background-color: #3b5998; ">Noticias sobre Facebook</h3>
+                
+                <a href="https://www.lasexta.com/tecnologia-tecnoxplora/redes-sociales/nuevo-escandalo-facebook-zuckerberg-jugado-tus-datos-beneficiar-sus-amigos_201904175cb6f6e20cf2e13669504f76.html" style="font-size: 13px;" > &bull; Nuevo escándalo en Facebook: Zuckerberg ha jugado con tus datos para beneficiar a sus amigos</a><br>
+                <a href="https://www.lavanguardia.com/vida/junior-report/20180323/441868812905/escandalo-facebook-datos-usuarios-filtracion.html" style="font-size: 13px;" > &bull; Los datos de millones de usuarios de la red social se han filtrado para que los utilicen otras empresas</a><br>
+                  
+                <h3 style="background-color: #db4a39;" >Noticias sobre Google</h3>      
+                
+                     <a href="https://www.estrategiaynegocios.net/tecnologia/1297966-330/google-vinculado-a-nuevo-esc%C3%A1ndalo-de-vulneraci%C3%B3n-de-datos" style="font-size: 13px;"> &bull;Google vinculado a nuevo escándalo de vulneración de datos</a><br>
+                     <a href="https://www.elmundo.es/tecnologia/2020/02/25/5e5459fcfc6c8366368b4577.html" style="font-size: 13px;" > &bull; Escándalo en Google: así "espía" a millones de niños en el colegio y en su casa</a><br>
+                     <a href="https://r3d.mx/2019/11/20/google-enfrenta-escandalo-por-recolectar-registros-medicos-en-estados-unidos/" style="font-size: 13px;" > &bull;Google enfrenta escándalo por recolectar registros médicos en Estados Unidos</a><br>
+               
+               <h3 style="background : linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);" >Noticias sobre Instagram</h3>    
+               
+                 <a href="https://www.elespectador.com/noticias/tecnologia/escandalo-salpica-a-instagram-empresa-estuvo-robando-datos-de-usuarios-por-mas-de-un-ano/" style="font-size: 13px;" > &bull;Escándalo salpica a Instagram: empresa estuvo robando datos de usuarios por más de un año</a><br>
+                 <a href="https://www.softonic.com/articulos/escandalo-de-instagram-una-compania-espia-a-millones-de-usuarios" style="font-size: 13px;"> &bull;Escándalo de Instagram: una compañía espía a millones de usuarios</a><br>
+                 <a href="https://www.adslzone.net/2019/08/08/empresa-roba-datos-millones-usuarios-instagram/" style="font-size: 13px;" > &bull;Una empresa roba datos de millones de usuarios de Instagram</a><br>
+                     
+            
+       
+        </li>
+    
+    </ul>
+    
+</body>
+</html>
+
+
+
+<script>
+
+    var social = document.getElementById("social");
+    social.style.display = "none";
+
+
+    var insta = document.getElementById("ocultarI");
+    insta.style.display = "none";
+    var face = document.getElementById("ocultarF");
+    face.style.display = "none";
+    var twit = document.getElementById("ocultarT");
+    twit.style.display = "none";
+    var goo = document.getElementById("ocultarG");
+    goo.style.display = "none";
+
+    
+
+
+    var instagram = document.getElementById("Instagram_data");
+    instagram.style.display = "none";
+
+    var twitter = document.getElementById("Twitter_data");
+    twitter.style.display = "none";
+
+    var google = document.getElementById("Google_data");
+    google.style.display = "none";
+
+    var facebook = document.getElementById("Facebook_data");
+    facebook.style.display = "none";
+
+
+  $('input[name=Instagram]').change(function() {
+    if ($(this).is(':checked')) {
+        instagram.style.display = "block";
+        insta.style.display = "inline";
+    } else {
+        instagram.style.display = "none";
+        insta.style.display = "none";
+    }
+  });
+  $('input[name=Twitter]').change(function() {
+    if ($(this).is(':checked')) {
+        twitter.style.display = "block";
+        twit.style.display = "inline";
+    } else {
+        twitter.style.display = "none";
+        twit.style.display = "none";
+    }
+  });
+  $('input[name=Facebook]').change(function() {
+    if ($(this).is(':checked')) {
+        facebook.style.display = "block";
+        face.style.display = "inline";
+    } else {
+        facebook.style.display = "none";
+        face.style.display = "none";
+    }
+  });
+  $('input[name=Google]').change(function() {
+    if ($(this).is(':checked')) {
+        google.style.display = "block";
+        goo.style.display = "inline";
+    } else {
+        google.style.display = "none";
+        goo.style.display = "none";
+    }
+  });
+
+  var boton = document.getElementById('botonOn');
+  var fomulario = document.getElementById('Form_Init');
+  var fomulario = document.getElementById('Form_Init');
+  var elementoprueba = document.getElementById('Facebook_data');
+        var elemento0f;
+        var elemento1f;
+        var elemento2f;
+        var elemento3f;
+        var elementohoraf;
+
+        var elemento0t;
+        var elemento1t;
+        var elemento2t;
+        var elemento3t;
+   
+
+
+        var elemento0g;
+        var elemento1g;
+        var elemento2g;
+        var elemento3g;
+
+        var elemento0i;
+        var elemento1i;
+        var elemento2i;
+        var elemento3i;
+
+
+        var valorF;
+        var valorI;
+        var valorT;
+        var valorG;
+
+    function FbotonOn() {
+
+        
+        elemento0f = document.forms["Facebook_data"]["elemento0"].value;
+        elemento1f = document.forms["Facebook_data"]["elemento1"].value;
+        elemento2f = document.forms["Facebook_data"]["elemento2"].value;
+        elemento3f = document.forms["Facebook_data"]["elemento3"].value;  
+        elementohoraf = document.forms["Facebook_data"]["elementohora"].value;
+        valorF = document.getElementById("facebook_five");
+        valorF.innerHTML = + parseFloat(elementohoraf * 8.97 / 2).toFixed(2)+ "$";
+        
+
+
+
+        elemento0t = document.forms["Twitter_data"]["elemento0"].value;
+
+        elemento1t = document.forms["Twitter_data"]["elemento1"].value;
+
+        elemento2t = document.forms["Twitter_data"]["elemento2"].value;
+
+        elemento3t = document.forms["Twitter_data"]["elemento3"].value;
+
+        elementohora = document.forms["Twitter_data"]["elementohora"].value;
+        valorF = document.getElementById("twitter_five");
+        valorF.innerHTML =  parseFloat( elementohora * 4.86/ 2  ).toFixed(2) + "$";
+
+
+        elemento0g = document.forms["Google_data"]["elemento0"].value;
+
+        elemento1g = document.forms["Google_data"]["elemento1"].value;
+
+        elemento2g = document.forms["Google_data"]["elemento2"].value;
+
+        elemento3g = document.forms["Google_data"]["elemento3"].value;
+
+        elementohora = document.forms["Google_data"]["elementohora"].value;
+        valorF = document.getElementById("google_five");
+        valorF.innerHTML =  parseFloat(elementohora * 45 / 2).toFixed(2)+ "$";
+
+
+
+        elemento0i = document.forms["Instagram_data"]["elemento0"].value;
+
+        elemento1i = document.forms["Instagram_data"]["elemento1"].value;
+
+        elemento2i = document.forms["Instagram_data"]["elemento2"].value;
+
+        elemento3i = document.forms["Instagram_data"]["elemento3"].value;
+
+        elementohora = document.forms["Instagram_data"]["elementohora"].value;
+        valorF = document.getElementById("instagram_five");
+        valorF.innerHTML = parseFloat(elementohora * 2.33 / 2).toFixed(2)+ "$" ;
+
+
+        boton.style.display = "none";
+        fomulario.style.display = "none";
+        social.style.display = "flex";
+
+
+        var barChartDataF = {
+			labels: ['CuotaMercado', 'IngresoUsuario',  'IngresoTotal', 'NumeroUsuario'],
+			datasets: [{
+				label: 'Datos Reales',
+				backgroundColor: [
+					"red",
+					"orange",
+					"yellow",
+					"green"
+				],
+				yAxisID: 'y-axis-1',
+				data: [
+					72,
+					20.21,
+					64.2,
+					24.49
+				]
+			}, {
+				label: 'Datos Usuario',
+				backgroundColor:"grey",
+				yAxisID: 'y-axis-2',
+				data: [
+                elemento0f,
+                elemento1f,
+                elemento2f,
+				elemento3f
+				]
+			}]
+
+        };
+        
+
+        var barChartDataT = {
+			labels: ['CuotaMercado', 'IngresoUsuario',  'IngresoTotal', 'NumeroUsuario'],
+			datasets: [{
+				label: 'Datos Reales',
+				backgroundColor: [
+					"red",
+					"orange",
+					"yellow",
+					"green"
+				],
+				yAxisID: 'y-axis-1',
+				data: [
+					24.7,
+					7.44,
+					31.44,
+					34
+				]
+			}, {
+				label: 'Datos Usuario',
+				backgroundColor:"grey",
+				yAxisID: 'y-axis-2',
+				data: [
+                elemento0t,
+                elemento1t,
+                elemento2t,
+				elemento3t
+				]
+			}]
+
+        };
+        
+        var barChartDataG = {
+			labels: ['CuotaMercado', 'IngresoUsuario',  'IngresoTotal', 'NumeroUsuario'],
+			datasets: [{
+				label: 'Datos Reales',
+				backgroundColor: [
+					"red",
+					"orange",
+					"yellow",
+					"green"
+				],
+				yAxisID: 'y-axis-1',
+				data: [
+					82.9,
+					45,
+					31,
+					2
+				]
+			}, {
+				label: 'Datos Usuario',
+				backgroundColor:"grey",
+				yAxisID: 'y-axis-2',
+				data: [
+                elemento0g,
+                elemento1g,
+                elemento2g,
+				elemento3g
+				]
+			}]
+
+        };
+        
+        var barChartDataI = {
+			labels: ['CuotaMercado', 'IngresoUsuario',  'IngresoTotal', 'NumeroUsuario'],
+			datasets: [{
+				label: 'Datos Reales',
+				backgroundColor: [
+					"red",
+					"orange",
+					"yellow",
+					"green"
+				],
+				yAxisID: 'y-axis-1',
+				data: [
+					72.4,
+					6.90,
+					20,
+					100
+				]
+			}, {
+				label: 'Datos Usuario',
+				backgroundColor:"grey",
+				yAxisID: 'y-axis-2',
+				data: [
+                elemento0i,
+                elemento1i,
+                elemento2i,
+				elemento3i
+				]
+			}]
+
+		};
+
+
+        var ctxF = document.getElementById('canvasF').getContext('2d');
+			window.myBar = new Chart(ctxF, {
+				type: 'bar',
+				data: barChartDataF,
+				options: {
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart - Multi Axis'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: true
+					},
+					scales: {
+						yAxes: [{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'left',
+							id: 'y-axis-1',
+						}, {
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'right',
+							id: 'y-axis-2',
+							gridLines: {
+								drawOnChartArea: false
+							}
+						}],
+					}
+				}
+            });
+            
+            var ctxT = document.getElementById('canvasT').getContext('2d');
+			window.myBar = new Chart(ctxT, {
+				type: 'bar',
+				data: barChartDataT,
+				options: {
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart - Multi Axis'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: true
+					},
+					scales: {
+						yAxes: [{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'left',
+							id: 'y-axis-1',
+						}, {
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'right',
+							id: 'y-axis-2',
+							gridLines: {
+								drawOnChartArea: false
+							}
+						}],
+					}
+				}
+            });
+            
+            var ctxG = document.getElementById('canvasG').getContext('2d');
+			window.myBar = new Chart(ctxG, {
+				type: 'bar',
+				data: barChartDataG,
+				options: {
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart - Multi Axis'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: true
+					},
+					scales: {
+						yAxes: [{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'left',
+							id: 'y-axis-1',
+						}, {
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'right',
+							id: 'y-axis-2',
+							gridLines: {
+								drawOnChartArea: false
+							}
+						}],
+					}
+				}
+            });
+
+            var ctxI = document.getElementById('canvasI').getContext('2d');
+			window.myBar = new Chart(ctxI, {
+				type: 'bar',
+				data: barChartDataI,
+				options: {
+					responsive: true,
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart - Multi Axis'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: true
+					},
+					scales: {
+						yAxes: [{
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'left',
+							id: 'y-axis-1',
+						}, {
+							type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							display: true,
+							position: 'right',
+							id: 'y-axis-2',
+							gridLines: {
+								drawOnChartArea: false
+							}
+						}],
+					}
+				}
+            });
+    }
+
+
+
+
+ 
+		window.onload = function() {
+
+		};
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			barChartData.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+			});
+			window.myBar.update();
+		});
+
+
+
+</script>

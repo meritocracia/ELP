@@ -1,0 +1,1 @@
+Nombre del comercio,Código de fidelización,Usuario de fidelización
