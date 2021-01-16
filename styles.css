@@ -1,0 +1,686 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana";
+	font-size: 1.5em;
+	font-weight: bold;
+	min-height: 100vh;
+
+
+}
+div.Form_Init{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-height: 90vh;
+}
+div.Form_Init ul{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	width: 100%;
+	height: 90%;
+}
+div.Form_Init ul li{
+	width: 25%;
+	min-height: 100vh;
+}
+div.Form_Init ul li.instagram{
+	background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+	color: black;
+	height:100%;
+
+}
+div.Form_Init ul li.google{
+	background: #db4a39;
+	color: black;
+	height:100%;
+	
+}
+div.Form_Init ul li.facebook{
+	background-color: #3b5998;
+	color: black;
+	height:100%;
+}
+div.Form_Init ul li.twitter{
+	background: #00acee;
+	color: black;
+	height:100%;
+}
+
+ul.social{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 100vh;
+}
+ul.social li{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 50%;
+
+}
+
+div.facebook{
+	background-color:white;
+	color: black;
+	
+	height:100%;
+}
+
+div.header, div.user_data, div.graphics, div.news{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+
+}
+
+.title{
+	display: flex;
+	width: 25%;
+	justify-content: center;
+	text-align: center;
+}
+.data{
+	display: flex;
+	width: 75%;
+	justify-content: center;
+	
+}
+div.header .data ul{
+	display: flex;
+	flex-direction: column;
+}
+div.header .data ul li{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content:center;
+	font-size: 15px;
+}
+div.header .data ul li span{
+	width: 50%;
+}
+span{
+	font-size: 15px;
+}
+
+div.user_data .data ul{
+	display: flex;
+	flex-direction: column;
+}
+div.user_data .data ul li{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content:center;
+	font-size: 15px;
+}
+div.user_data .data ul li span{
+	width: 50%;
+}
+
+
+
+
+div.twitter{
+	background: white;
+	color: black;
+	height:100%;
+
+}
+div.instagram{
+	/*linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);*/
+	background: white;
+	color: black;
+	height:100%;
+
+}
+div.google{
+	background: white;
+	color: black;
+	height:100%;
+
+}
+
+ 
+button { 
+    border-radius: 20px;
+	display: inline-block;
+	color:#fff;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+.icon-facebook2  {background :#000000;}
+.icon-twitter    {background: #000000;}
+.icon-google     {background: #000000;}
+.icon-instagram  {background: #000000;}
+.newsList  li{
+	display: flex;
+	
+	color: white;
+	font-size: 15px;
+}
+ 
+button:hover {
+	background: #000; 
+	padding: 10px 30px;
+}
+
+button:hover {
+	background: #000; 
+	padding: 10px 30px;
+}
+
+a{
+	text-decoration:none;
+	color: black;
+
+}
+
+
+
+.one{
+	color: green;
+}
+.two{
+	color: firebrick;
+}
+.three{
+	color: steelblue;
+}
+.four{
+	color: orange;
+}
+
+/***/
+.chart-skills {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  .chart-skills *,
+  .chart-skills::before {
+	box-sizing: border-box;
+  }
+
+  /* CHART-SKILLS STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .chart-skills {
+	position: relative;
+	width: 350px;
+	height: 175px;
+	overflow: hidden;
+  }
+  
+  .chart-skills::before,
+  .chart-skills::after {
+	position: absolute;
+  }
+  
+  .chart-skills::before {
+	width: inherit;
+	height: inherit;
+	border: 45px solid rgba(211, 211, 211, .3);
+	border-bottom: none;
+	border-top-left-radius: 175px;
+	border-top-right-radius: 175px;
+  }
+  
+  .chart-skills::after {
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: cadetblue;
+  }
+  
+  .chart-skills li {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	border: 45px solid;
+	border-top: none;
+	border-bottom-left-radius: 175px;
+	border-bottom-right-radius: 175px;
+	transform-origin: 50% 0;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	animation-fill-mode: forwards;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+  }
+
+
+  /** Facebook **/
+  .chart-skills li.facebook:nth-child(1) {
+	z-index: 8;
+	border-color: rgb(0, 255, 0);
+	animation-name: rotate-one-facebook;
+  }
+  .chart-skills li.facebook:nth-child(2) {
+	z-index: 7;
+	border-color: green;
+	animation-name: rotate-two-facebook;
+
+  }
+  .chart-skills li.facebook:nth-child(3) {
+	z-index: 6;
+	border-color: rgb(255, 0, 0);
+	animation-name: rotate-three-facebook;
+	
+  }
+  .chart-skills li.facebook:nth-child(4) {
+	z-index: 5;
+	border-color: rgb(129, 0, 0);
+	animation-name: rotate-four-facebook;
+	
+  }
+  .chart-skills li.facebook:nth-child(5) {
+	z-index: 4;
+	color: steelblue;
+	animation-name: rotate-five-facebook;
+  }
+  .chart-skills li.facebook:nth-child(6) {
+	z-index: 3;
+	color: rgb(136, 197, 247);
+	animation-name: rotate-six-facebook;
+  }
+  .chart-skills li.facebook:nth-child(7) {
+	z-index: 2;
+	color: orange;
+	animation-name: rotate-seven-facebook;
+  }
+  .chart-skills li.facebook:nth-child(8) {
+	z-index: 1;
+	color: rgb(247, 190, 86);
+	animation-name: rotate-eight-facebook;
+  }
+@keyframes rotate-one-facebook {
+	100% {
+	  transform: rotate(32.4deg);
+	}
+  }
+  @keyframes rotate-two-facebook {
+	0% {
+	  transform: rotate(32.4deg);
+	}
+	100% {
+	  transform: rotate(45deg);
+	}
+  }
+  @keyframes rotate-three-facebook {
+	0% {
+	  transform: rotate(45deg);
+	}
+	100% {
+	  transform: rotate(54deg);
+	}
+  }
+  @keyframes rotate-four-facebook {
+	0% {
+	  transform: rotate(54deg);
+	}
+	100% {
+	  transform: rotate(90deg);
+	}
+  }
+  @keyframes rotate-five-facebook {
+	0% {
+	  transform: rotate(90deg);
+	}
+	100% {
+	  transform: rotate(118.89deg);
+	}
+  }
+  @keyframes rotate-six-facebook {
+	0% {
+	  transform: rotate(118.89deg);
+	}
+	100% {
+	  transform: rotate(135deg);
+	}
+  }
+  @keyframes rotate-seven-facebook {
+	0% {
+	  transform: rotate(135deg);
+	}
+	100% {
+	  transform: rotate(150.74deg);
+	}
+  }
+  @keyframes rotate-eight-facebook {
+	0% {
+	  transform: rotate(150.74deg);
+	}
+	100% {
+	  transform: rotate(180deg);
+	}
+  }
+  /** Twitter **/
+  .chart-skills li.twitter:nth-child(1) {
+	z-index: 8;
+	border-color: rgb(0, 255, 0);
+	animation-name: rotate-one-twitter;
+  }
+  .chart-skills li.twitter:nth-child(2) {
+	z-index: 7;
+	border-color: green;
+	animation-name: rotate-two-twitter;
+  }
+  .chart-skills li.twitter:nth-child(3) {
+	z-index: 6;
+	border-color: rgb(255, 0, 0);
+	animation-name: rotate-three-twitter;
+  }
+  .chart-skills li.twitter:nth-child(4) {
+	z-index: 5;
+	border-color: rgb(129, 0, 0);
+	animation-name: rotate-four-twitter;
+  }
+  .chart-skills li.twitter:nth-child(5) {
+	z-index: 4;
+	color: steelblue;
+	animation-name: rotate-five-twitter;
+  }
+  .chart-skills li.twitter:nth-child(6) {
+	z-index: 3;
+	color: rgb(136, 197, 247);
+	animation-name: rotate-six-twitter;
+  }
+  .chart-skills li.twitter:nth-child(7) {
+	z-index: 2;
+	color: orange;
+	animation-name: rotate-seven-twitter;
+  }
+  .chart-skills li.twitter:nth-child(8) {
+	z-index: 1;
+	color: rgb(247, 190, 86);
+	animation-name: rotate-eight-twitter;
+  }
+@keyframes rotate-one-twitter {
+	100% {
+	  transform: rotate(11.12deg);
+	}
+  }
+  @keyframes rotate-two-twitter {
+	0% {
+	  transform: rotate(11.12deg);
+	}
+	100% {
+	  transform: rotate(45deg);
+	}
+  }
+  @keyframes rotate-three-twitter {
+	0% {
+	  transform: rotate(45deg);
+	}
+	100% {
+	  transform: rotate(48.35deg);
+	}
+  }
+  @keyframes rotate-four-twitter {
+	0% {
+	  transform: rotate(48.35deg);
+	}
+	100% {
+	  transform: rotate(90deg);
+	}
+  }
+  @keyframes rotate-five-twitter {
+	0% {
+	  transform: rotate(90deg);
+	}
+	100% {
+	  transform: rotate(91.40deg);
+
+	}
+  }
+  @keyframes rotate-six-twitter {
+	0% {
+	  transform: rotate(91.40deg);
+	}
+	100% {
+	  transform: rotate(135deg);
+	}
+  }
+  @keyframes rotate-seven-twitter {
+	0% {
+	  transform: rotate(135deg);
+	}
+	100% {
+	  transform: rotate(137.16deg);
+	}
+  }
+  @keyframes rotate-eight-twitter {
+	0% {
+	  transform: rotate(137.16deg);
+	}
+	100% {
+	  transform: rotate(180deg);
+	}
+  }
+/** Google **/
+.chart-skills li.google:nth-child(1) {
+  z-index: 8;
+  border-color: rgb(0, 255, 0);
+  animation-name: rotate-one-google;
+}
+.chart-skills li.google:nth-child(2) {
+  z-index: 7;
+  border-color: green;
+  animation-name: rotate-two-google;
+}
+.chart-skills li.google:nth-child(3) {
+  z-index: 6;
+  border-color: rgb(255, 0, 0);
+  animation-name: rotate-three-google;
+  
+}
+.chart-skills li.google:nth-child(4) {
+  z-index: 5;
+  border-color: rgb(129, 0, 0);
+  animation-name: rotate-four-google;
+  
+}
+.chart-skills li.google:nth-child(5) {
+  z-index: 4;
+  color: steelblue;
+  animation-name: rotate-five-google;
+}
+.chart-skills li.google:nth-child(6) {
+  z-index: 3;
+  color: rgb(136, 197, 247);
+  animation-name: rotate-six-google;
+}
+.chart-skills li.google:nth-child(7) {
+  z-index: 2;
+  color: orange;
+  animation-name: rotate-seven-google;
+}
+.chart-skills li.google:nth-child(8) {
+  z-index: 1;
+  color: rgb(247, 190, 86);
+  animation-name: rotate-eight-google;
+}
+@keyframes rotate-one-google {
+  100% {
+	transform: rotate(37.31deg);
+  }
+}
+@keyframes rotate-two-google {
+  0% {
+	transform: rotate(37.31deg);
+  }
+  100% {
+	transform: rotate(45deg);
+  }
+}
+@keyframes rotate-three-google {
+  0% {
+	transform: rotate(45deg);
+  }
+  100% {
+	transform: rotate(65.25deg);
+  }
+}
+@keyframes rotate-four-google {
+  0% {
+	transform: rotate(65.25deg);
+  }
+  100% {
+	transform: rotate(90deg);
+  }
+}
+@keyframes rotate-five-google {
+  0% {
+	transform: rotate(90deg);
+  }
+  100% {
+	transform: rotate(103.95deg);
+  }
+}
+@keyframes rotate-six-google {
+  0% {
+	transform: rotate(103.95deg);
+  }
+  100% {
+	transform: rotate(135deg);
+  }
+}
+@keyframes rotate-seven-google {
+  0% {
+	transform: rotate(135deg);
+  }
+  100% {
+	transform: rotate(147.83deg);
+  }
+}
+@keyframes rotate-eight-google {
+  0% {
+	transform: rotate(147.83deg);
+  }
+  100% {
+	transform: rotate(180deg);
+  }
+}
+/** Instagram **/
+.chart-skills li.instagram:nth-child(1) {
+	z-index: 8;
+	border-color: rgb(0, 255, 0);
+	animation-name: rotate-one-instagram;
+  }
+  .chart-skills li.instagram:nth-child(2) {
+	z-index: 7;
+	border-color: green;
+	animation-name: rotate-two-instagram;
+  }
+  .chart-skills li.instagram:nth-child(3) {
+	z-index: 6;
+	border-color: rgb(255, 0, 0);
+	animation-name: rotate-three-instagram;
+  }
+  .chart-skills li.instagram:nth-child(4) {
+	z-index: 5;
+	border-color: rgb(129, 0, 0);
+	animation-name: rotate-four-instagram;
+  }
+  .chart-skills li.instagram:nth-child(5) {
+	z-index: 4;
+	color: steelblue;
+	animation-name: rotate-five-instagram;
+  }
+  .chart-skills li.instagram:nth-child(6) {
+	z-index: 3;
+	color: rgb(136, 197, 247);
+	animation-name: rotate-six-instagram;
+  }
+  .chart-skills li.instagram:nth-child(7) {
+	z-index: 2;
+	color: orange;
+	animation-name: rotate-seven-instagram;
+  }
+  .chart-skills li.instagram:nth-child(8) {
+	z-index: 1;
+	color: rgb(247, 190, 86);
+	animation-name: rotate-eight-instagram;
+  } 
+  @keyframes rotate-one-instagram {
+	100% {
+	  transform: rotate(32.58deg);
+	}
+  }
+  @keyframes rotate-two-instagram {
+	0% {
+	  transform: rotate(32.58deg);
+	}
+	100% {
+	  transform: rotate(45deg);
+	}
+  }
+  @keyframes rotate-three-instagram {
+	0% {
+	  transform: rotate(45deg);
+	}
+	100% {
+	  transform: rotate(48.11deg);
+	}
+  }
+  @keyframes rotate-four-instagram {
+	0% {
+	  transform: rotate(48.11deg);
+	}
+	100% {
+	  transform: rotate(90deg);
+	}
+  }
+  @keyframes rotate-five-instagram {
+	0% {
+	  transform: rotate(90deg);
+	}
+	100% {
+	  transform: rotate(99deg);
+	}
+  }
+  @keyframes rotate-six-instagram {
+	0% {
+	  transform: rotate(99eg);
+	}
+	100% {
+	  transform: rotate(135deg);
+	}
+  }
+  @keyframes rotate-seven-instagram {
+	0% {
+	  transform: rotate(135deg);
+	}
+	100% {
+	  transform: rotate(141.43deg);
+	}
+  }
+  @keyframes rotate-eight-instagram {
+	0% {
+	  transform: rotate(141.43deg);
+	}
+	100% {
+	  transform: rotate(180deg);
+	}
+  }
