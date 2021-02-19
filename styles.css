@@ -51,6 +51,11 @@ div.Form_Init ul li.twitter{
 	color: black;
 	height:100%;
 }
+ul.social  li.noticias{
+	background-color: rgb(79, 228, 215);
+	color:black;
+	height:100%;
+}
 
 ul.social{
 	margin: 0;
@@ -74,6 +79,7 @@ div.facebook{
 	
 	height:100%;
 }
+
 
 div.header, div.user_data, div.graphics, div.news{
 	display: flex;
@@ -201,10 +207,16 @@ a{
 }
 .three{
 	color: steelblue;
+	margin-left: 100px;
+	margin-top: 20 px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: left;
 }
 .four{
 	color: orange;
 }
+
 
 /***/
 .chart-skills {

@@ -4,36 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js" integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css" integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="icons/fonts.css">
+
     <title>Meritocracia</title>
+
 </head>
 <body>
-    <h3>Noticias sobre Twitter</h3>
-    <li>
-        <span> <a href="https://cincodias.elpais.com/cincodias/2019/08/07/companias/1565192614_688201.html">Twitter admite que usó datos de sus usuarios sin permiso</a></span>
-        <span> <a href="https://www.xataka.com/servicios/twitter-le-vendio-datos-al-mismo-investigador-de-cambridge-analytica-que-se-los-robo-a-facebook">Twitter le vendió datos al mismo investigador de Cambridge Analytica que se los robó a Facebook</a></span>
-        <span> <a href="https://www.abc.es/tecnologia/redes/abci-twitter-estado-usando-datos-usuarios-para-publicidad-sin-tener-permiso-201908080938_noticia.html">La red social Twitter ha estado usando datos de sus usuarios para publicidad sin tener permiso </a></span> 
-        
+    
+    <div id="Form_Init" class="Form_Init">
+        <ul>
+    
+    <li class="twitter">
+        <h3>Noticias sobre Twitter</h3>
+        <p>
+        <span> <a href="https://cincodias.elpais.com/cincodias/2019/08/07/companias/1565192614_688201.html" target="_blank">Twitter admite que usó datos de sus usuarios sin permiso</a></span>
+        </p>
+        <p>
+            <br>
+        <span> <a href="https://www.xataka.com/servicios/twitter-le-vendio-datos-al-mismo-investigador-de-cambridge-analytica-que-se-los-robo-a-facebook" target="_blank">Twitter le vendió datos al mismo investigador de Cambridge Analytica que se los robó a Facebook</a></span>
+        </p>
+        <p>
+        <span> <a href="https://www.abc.es/tecnologia/redes/abci-twitter-estado-usando-datos-usuarios-para-publicidad-sin-tener-permiso-201908080938_noticia.html" target="_blank">La red social Twitter ha estado usando datos de sus usuarios para publicidad sin tener permiso </a></span> 
+         </p>
+         <h3>Datos que Twitter guarda de una cuenta, click en el botón</h3>
+         <center><a href="view/twitter/index.html" target="search_iframe"><button class="icon-twitter"></button></a></center>
     </li>
-    <h3>Noticias sobre Facebook</h3>
-    <li>
-    <a href="https://www.lasexta.com/tecnologia-tecnoxplora/redes-sociales/nuevo-escandalo-facebook-zuckerberg-jugado-tus-datos-beneficiar-sus-amigos_201904175cb6f6e20cf2e13669504f76.html">Nuevo escándalo en Facebook: Zuckerberg ha jugado con tus datos para beneficiar a sus amigos</a></span>
-    <a href="https://www.lavanguardia.com/vida/junior-report/20180323/441868812905/escandalo-facebook-datos-usuarios-filtracion.html">Los datos de millones de usuarios de la red social se han filtrado para que los utilicen otras empresas</a></span>
-    <a href="https://hipertextual.com/2019/07/facebook-es-multada-con-5-000-millones-dolares-sus-escandalos-privacidad">Facebook es multada con 5.000 millones de dólares por sus escándalos de privacidad</a></span>
-    </li>    
-    <h3>Noticias sobre Google</h3>      
-    <li>
-        <span> <a href="https://www.estrategiaynegocios.net/tecnologia/1297966-330/google-vinculado-a-nuevo-esc%C3%A1ndalo-de-vulneraci%C3%B3n-de-datos">Google vinculado a nuevo escándalo de vulneración de datos</a></span>
-        <span> <a href="https://www.elmundo.es/tecnologia/2020/02/25/5e5459fcfc6c8366368b4577.html">Escándalo en Google: así "espía" a millones de niños en el colegio y en su casa</a></span>
-        <span> <a href="https://r3d.mx/2019/11/20/google-enfrenta-escandalo-por-recolectar-registros-medicos-en-estados-unidos/">Google enfrenta escándalo por recolectar registros médicos en Estados Unidos</a></span>
-   </li>
-   <h3>Noticias sobre Instagram</h3>    
-   <li>
-    <span> <a href="https://www.elespectador.com/noticias/tecnologia/escandalo-salpica-a-instagram-empresa-estuvo-robando-datos-de-usuarios-por-mas-de-un-ano/">Escándalo salpica a Instagram: empresa estuvo robando datos de usuarios por más de un año</a></span>
-    <span> <a href="https://www.softonic.com/articulos/escandalo-de-instagram-una-compania-espia-a-millones-de-usuarios">Escándalo de Instagram: una compañía espía a millones de usuarios</a></span>
-    <span> <a href="https://www.adslzone.net/2019/08/08/empresa-roba-datos-millones-usuarios-instagram/">Una empresa roba datos de millones de usuarios de Instagram</a></span>
-</li>       
+    
+    <li class="facebook">
+        <h3>Noticias sobre Facebook</h3>
+        <p>
+            <span><a href="https://www.lasexta.com/tecnologia-tecnoxplora/redes-sociales/nuevo-escandalo-facebook-zuckerberg-jugado-tus-datos-beneficiar-sus-amigos_201904175cb6f6e20cf2e13669504f76.html" target="_blank">Nuevo escándalo en Facebook: Zuckerberg ha jugado con tus datos para beneficiar a sus amigos</a></span>
+        </p>
+        <p>
+            <span><a href="https://www.lavanguardia.com/vida/junior-report/20180323/441868812905/escandalo-facebook-datos-usuarios-filtracion.html" target="_blank" >Los datos de millones de usuarios de la red social se han filtrado para que los utilicen otras empresas</a></span>
+        </p>
+         <p>
+            <span><a href="https://hipertextual.com/2019/07/facebook-es-multada-con-5-000-millones-dolares-sus-escandalos-privacidad" target="_blank">Facebook es multada con 5.000 millones de dólares por sus escándalos de privacidad</a></span>
+        </p>
+            <h3>Datos que Facebook guarda de una cuenta, click en el botón</h3>
+                <center><a href="view/facebook/index.html" target="search_iframe"><button class="icon-facebook2"></button></a></center>         
+</li>    
+         
+    <li class="google">
+        <h3>Noticias sobre Google</h3> 
+     <p>
+        <span> <a href="https://www.estrategiaynegocios.net/tecnologia/1297966-330/google-vinculado-a-nuevo-esc%C3%A1ndalo-de-vulneraci%C3%B3n-de-datos" target="_blank">Google vinculado a nuevo escándalo de vulneración de datos</a></span>
+    </p>
+    <p>
+        <br>
+        <span> <a href="https://www.elmundo.es/tecnologia/2020/02/25/5e5459fcfc6c8366368b4577.html" target="_blank">Escándalo en Google: así "espía" a millones de niños en el colegio y en su casa</a></span>
+    </p>
+    <p>
+        <span> <a href="https://r3d.mx/2019/11/20/google-enfrenta-escandalo-por-recolectar-registros-medicos-en-estados-unidos/" target="_blank">Google enfrenta escándalo por recolectar registros médicos en Estados Unidos</a></span>
+    </p>
+    <h3>Datos que Google guarda de una cuenta, click en el botón</h3>
+    <center> <a href="view/google/index.html" target="search_iframe"><button class="icon-google"></button></a></center>
+    </li>
+      
+   <li class="instagram">
+    <h3>Noticias sobre Instagram</h3> 
+    <p>
+    <span> <a href="https://www.elespectador.com/noticias/tecnologia/escandalo-salpica-a-instagram-empresa-estuvo-robando-datos-de-usuarios-por-mas-de-un-ano/" target="_blank">Escándalo salpica a Instagram: empresa estuvo robando datos de usuarios por más de un año</a></span>
+    </p>
+    <p>
+    <span> <a href="https://www.softonic.com/articulos/escandalo-de-instagram-una-compania-espia-a-millones-de-usuarios" target="_blank">Escándalo de Instagram: una compañía espía a millones de usuarios</a></span>
+    </p>
+    <p>
+        <br>
+    <span> <a href="https://www.adslzone.net/2019/08/08/empresa-roba-datos-millones-usuarios-instagram/" target="_blank">Una empresa roba datos de millones de usuarios de Instagram</a></span>
+        <br></br>
+    </p>
+    <h3>Instagram no permite acceder a saber qué datos específicos guarda de nosotros</h3>
+    </li> 
+ </ul>
+
+</div>
+
+<div id="nombres" style="font-size: 13px;">
+    
+    <center><p>
+        <br></br><br></br><br>
+        Proyecto realizado por:  
+        Pablo Morer Olmos, 
+        Daniel Ledesma Ventura </p></center>
+	    <br>
+	   <center>
+		 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>Esta obra está
+ 		 bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons
+   		 Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>
+		 </p>
+	   </center>
+    </div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 
 </body>
 </html>
